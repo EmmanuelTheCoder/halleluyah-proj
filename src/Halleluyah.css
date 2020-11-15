@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f6f6f6;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header h1{
+    align-self: center;
+    padding-left: .2rem;
+    font-family: Montserrat;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    color: white;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(107, 107, 197);
+    
+    
+}
+
+.header img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+}
+.about-church{
+    text-align: center;
+    margin-top: -1rem;
+    font-family: sans-serif;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+}
+.church-info{
+    text-align: justify;
+    padding: 0 3.5rem;
+    margin-top: 8rem;
+    font-size: 1.1rem;
+}
+.church-info i {
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(72, 72, 243);
+}
+.church-image{
+    width: 20rem;
+    box-shadow: 3px 4px 6px silver;
+    margin-top: 1rem;
+   
+}
+.church-image-container{
+    text-align: center;
+    
+}
+
+.hamburger-container{
+    
+    position: absolute;
+    top: 1.5rem;
+    right: .5rem;
+}
+/* @keyframes change{
+    0%{
+        transition: 5s all ease;
+        box-shadow: none;
+        width: 22rem;
+    }
+    100%{
+        transition: 5s all ease;
+        box-shadow: 3px 4px 6px silver;
+        width: 20rem;
+    }
+} */
+.image-desc{
+    margin-top: -.5rem;
+    font-style: italic;
+    font-family: monospace;
+    font-size: 1.4rem;
+}
+.service{
+    text-align: center;
+    box-shadow: rgb(211, 243, 190) 5px 4px 12px;
+    margin-top: 4rem;
+  }
+  .service h2{
+    text-transform: uppercase;
+    color: blue;
+    margin-top: 1.2rem;
+    padding-bottom: .7rem;
+  }
+  table{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2.5rem;
+  
+  }
+  td{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  td:first-child{
+    color: red;
+    padding-bottom: .5rem;
+  }
+  td:last-child{
+    padding-bottom: 2rem;
+  }
+  .minister{
+      text-align: center;
+      margin-top: 3rem;
+  }
+  .minister h2{
+      text-transform: uppercase;
+      color: blue;
+      padding-bottom: 1.5rem;
+      font-size: 1.7rem;
+      
+
+  }
+  .pastor{
+      width: 20rem;
+    
+  }
+  .minister-desc{
+      text-align: justify;
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+      padding: 1rem 2rem;
+
+  }
+  .minister-desc i{
+      font-weight: 600;
+  }
+  .events{
+      text-align: center;
+      margin-top: 2rem;
+  }
+  .events h2{
+      color: blue;
+      text-transform: uppercase;
+      padding-bottom: 1.5rem;
+  }
+  .events p{
+      font-size: 1.2rem;
+      padding: .3rem 1rem;
+  }
+  .events img{
+      width: 25rem;
+  }
+  .watch-word{
+      text-align: center;
+      margin-top: 3rem;
+  }
+  .watch-word h2{
+      color: blue;
+      text-transform: uppercase;
+      padding-bottom: 1rem;
+  }
+  .watch-word p{
+      font-size: 1.2rem;
+      padding: .4rem 2rem;
+  }
+  .contact{
+      text-align: center;
+      margin-top: 3rem;
+  }
+  .contact h2{
+      color: blue;
+      text-transform: uppercase;
+      padding-bottom: .4rem;  
+  }
+  .contact p{
+      font-size: 1.4rem;
+      padding: .1rem .9rem;
+      margin-bottom: 1.2rem;
+      font-style: italic;
+
+  }
+  /* label{
+      display: block;
+  } */
+  
+
+  .form{
+    margin-top:3rem;
+  }
+ 
+  input, textarea{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+  }
+  input{
+    width: 15rem;
+    height: 1.6rem;
+  }
+  label{
+    font-size: 1.2rem;
+    font-family: Tahoma;
+  }
+  button{
+    width: 20vw;
+    height: 4vh;
+    margin-top: .5rem;
+    outline: none;
+    background: none;
+    color:white;
+    background: rgb(67, 156, 190);
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+  }
+
+  @media(min-width: 900px){
+      .church-info, .minister-desc{
+          font-size: 1.3rem;
+          line-height: 2rem;
+      }
+      .church-info{
+          font-family: sans-serif;
+      }
+      .watch-word p{
+          font-size: 1.5rem;
+      }
+      .contact p{
+          font-size: 1.6;
+      }
+     
+  }
+  @media(min-width: 1000px){
+    .about-church{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       
+    }
+    .church-image-container{
+        align-self: center;
+        margin-right: 2rem;
+        
+    }
+    .church-image-container img{
+        margin-top: 6.5rem;
+        /* transition: 5s all ease-in-out;
+        animation: change 5s infinite; */
+    }
+    
+  }
