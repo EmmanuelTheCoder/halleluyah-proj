@@ -16,7 +16,7 @@ const LandingPage = () =>{
             <Title />
             <div className="about-church">
                <div className="church-info-container">
-                  <p className="church-info">
+                  <p className="church-info" id="about-church">
                      Christ Apostolic Church (CAC) Halleluyah chapel is located at Beatrice Anike street, Tanke-Okeodo, Ilorin, Nigeria. It was established on
                      November 1, 2003 by the Lord's decree to Pastor M.B Ajiroba who is the Minister-in-charge. The church has been
                      a life-changing arena, helping people, especially youths to be better and to set their focus on Christ alone. <i>To succeed in life and make heaven </i> 
@@ -31,7 +31,7 @@ const LandingPage = () =>{
             </div>
 
             <div className="service">
-              <h2>Service schedule</h2>
+              <h2 id="service-schedule">Service schedule</h2>
               <table>
                   <tbody>
                      <tr>
@@ -59,7 +59,7 @@ const LandingPage = () =>{
                </table>
            </div>
            <div className="minister">
-              <h2>minister-in-charge</h2>
+              <h2 id="minister-in-charge">minister-in-charge</h2>
               <img src={pastor} alt="pastor" className="pastor"/>
               <p className="minister-desc">
                   Pastor M.B Ajiroba is the pastor in charge of Christ Apostolic Church, Halleluyah Chapel. Daddy, as he is fondly called by his members
@@ -80,7 +80,7 @@ const LandingPage = () =>{
                  for I am God, and there is none else." <strong>Isaiah 45:22(KJV)</strong>
               </p>
            </div>
-           <div className="contact">
+           <div className="contact" id="contact">
               
               <p>For prayer request and counselling, use the form below!</p>
                <form method="post" name="contact, prayer and counselling" netlify className="contact-form">

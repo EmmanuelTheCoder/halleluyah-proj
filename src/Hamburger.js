@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import HamburgerMenu from  'react-hamburger-menu';
+import {Link} from 'react-router-dom';
 import './Halleluyah.css';
 
 
@@ -8,66 +9,80 @@ class Hamburger extends Component{
         open: [false, true, false, true],
         toggler: {
             display: 'none'
+        },
+        handleDisplay:{
+            display: 'block'
         }
+       
     };
+    
+    handleHide =() =>{
+        this.setState({
+            handleDisplay:{
+                display: 'none'
+            }
+        })
 
+        
+    }
    
 
     handleClick(){
-        // if(!this.state.toggler){
-        //     this.setState({
-        //         toggler: this.state.toggler
-        //     })
-        // }
         
         this.setState({
             open: !this.state.open,
             
         });
-                    // if(this.state.open){
-                    //     alert("open")
-                    // }
-                    // this.setState({
-                    //     toggler:{
-                    //         display: 'block'
-                    //     }
-                    // })
-                    if(this.state.open){
-                        this.setState({
-                            toggler:{
-                                display: 'block'
-                            }
-                        })
-                    }else{
-                        this.setState({
-                            toggler:{
-                                display: 'none'
-                            }
-                        })
-                    }
+        if(this.state.open){
+            this.setState({
+                toggler:{
+                    display: 'block'
+                }
+            })
+        }else{
+            this.setState({
+                toggler:{
+                    display: 'none'
+                }
+            })
+        }
     }
     render(){
-        const arrangement = {
-            display: 'none',
-        }
+       
         return(
             <div>
-                <HamburgerMenu
-         isOpen={!this.state.open}
-          menuClicked={this.handleClick.bind(this)}
-         width={30}
-         height={20}
-         strokeWidth={3}
-         rotate={0}
-         color='white'
-         borderRadius={0}
-         animationDuration={0.5}
-         className="hamburger"
-                />
+                <div className="hamburger-div">
+                    <HamburgerMenu
+                        isOpen={!this.state.open}
+                        menuClicked={this.handleClick.bind(this)}
+                        width={30}
+                        height={20}
+                        strokeWidth={3}
+                        rotate={0}
+                        color='white'
+                        borderRadius={0}
+                        animationDuration={0.5}
+                        className="hamburger"
+                    />
+                </div>
 
-               <div style={this.state.toggler}>
-               <p>hello peope</p>
-                <p>how are you doing</p>
+               <div style={this.state.toggler} className="hamburger-list">
+                
+                    <Link to="/">
+                        {/* <a href="#about-church">About Church</a>
+                        <a href="#service-schedule">Service Schedule</a>
+                        <a href="#minister-in-charge">Minister-In-Charge</a> */}
+                        <a href="#contact">Contact</a>
+                    </Link>
+                    <Link to="/">
+                        <a href="#about-church">About Church</a>
+                        <p href="#contact">contact fake</p>
+                    </Link>
+                    <Link to="/executives" className="executives">
+                        <a href="#executive" >Meet The Executive</a>
+                    </Link>
+                    <a href="#minister-in-charge">dfaffdfad</a>
+                
                </div>
             </div>
             
