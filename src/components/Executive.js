@@ -36,7 +36,7 @@ const Executive = () =>{
                     <p>09060613238</p> 
                </div>
                <div className="asst-gen-sec">
-                    <img src="pictures/tope.jpg" alt=" Asst.General secretary"/>
+                    <img src="pictures/samuel.jpg" alt=" Asst.General secretary"/>
                     <p>Idowu, Samuel</p>
                     <p>Assistant General Secretary</p>
                     <p>08105160160</p> 
@@ -97,7 +97,7 @@ const Executive = () =>{
                   
                    <div className="sunday-school">
                         <img src="pictures/barrister.jpg" alt="HOD Sunday School Unit" />
-                        <p>Ajiroba, Paul</p>
+                        <p>Barr. Ajiroba, Paul</p>
                         <p>HOD, Sunday School Unit</p>
                         <p>08174593928</p>
                     </div>

@@ -16,7 +16,9 @@ const LandingPage = () =>{
          <div>
             <Title />
             <div className="about-church">
+               
                <div className="church-info-container">
+                  
                   <p className="church-info" id="about-church">
                      Christ Apostolic Church (CAC) Halleluyah chapel is located at Beatrice Anike street, Tanke-Okeodo, Ilorin, Nigeria. It was established on
                      November 1, 2003 by the Lord's decree to Pastor M.B Ajiroba who is the Minister-in-charge. The church has been

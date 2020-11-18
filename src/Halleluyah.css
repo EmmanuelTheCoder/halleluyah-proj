@@ -28,7 +28,7 @@ a{
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgb(107, 107, 197);
+    background: rgb(61, 61, 197);
     
     
 }
@@ -50,9 +50,10 @@ a{
 }
 .church-info{
     text-align: justify;
-    padding: 0 3.5rem;
+    padding: 0 1rem;
     margin-top: 8rem;
     font-size: 1.1rem;
+    line-height: 1.8rem;
 }
 .church-info i {
     font-weight: 400;
@@ -280,7 +281,7 @@ a{
     border-radius: 20px;
     border: none;
   }
-
+  
   @media(min-width: 900px){
       .church-info, .minister-desc{
           font-size: 1.3rem;
@@ -297,6 +298,59 @@ a{
       }
      
   }
+  @media(min-width: 200px){
+      
+      .header h1{
+          font-size: 1.5rem;
+      }
+      .header img{
+          width: 4rem;
+          height: 4rem;
+          margin-left: 1rem;
+      }
+      .hamburger-div{
+          left: 1rem;
+          top: 1.2rem;
+          
+        
+      }
+      
+  }
+  @media(min-width: 480px){
+    .header h1{
+        align-self: center;
+        padding-left: .2rem;
+        font-family: Montserrat;
+        margin-top: 1rem;
+        text-transform: capitalize;
+        color: white;
+        font-size: 2rem;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgb(61, 61, 197);
+        
+        
+    }
+    
+    .header img{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50px;
+        margin-left: 0;
+    }
+    .top-header{
+        display: none;
+    }
+    .hamburger-div{
+        position: fixed;
+        right: .6rem;
+        top: 1.5rem;
+    }
+  }
+
   @media(min-width: 1000px){
     .about-church{
         display: flex;
