@@ -1,5 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
+
+const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
 
 const Executive = () =>{
     return(
@@ -31,19 +36,19 @@ const Executive = () =>{
                     <p>09060613238</p> 
                </div>
                <div className="asst-gen-sec">
-                    <img src="pictures/tope.jpg" alt="General secretary"/>
+                    <img src="pictures/tope.jpg" alt=" Asst.General secretary"/>
                     <p>Idowu, Samuel</p>
                     <p>Assistant General Secretary</p>
                     <p>08105160160</p> 
                </div>
                <div className="treasurer">
-                    <img src="pictures/adeola.jpg" alt="General secretary"/>
+                    <img src="pictures/folashayo.jpg" alt="Treasurer"/>
                     <p>Olawole, Folashayo</p>
                     <p>Treasurer</p>
                     <p>07060438908</p> 
                </div>
                <div className="fin-sec">
-                    <img src="pictures/lydia.jpg" alt="General secretary"/>
+                    <img src="pictures/lydia.jpg" alt="Financial Secretary"/>
                     <p>Solarin, Lydia</p>
                     <p>Financial Secretary</p>
                     <p>08186786401</p> 
@@ -55,25 +60,25 @@ const Executive = () =>{
                    <p>09066724369</p>
                </div>
                <div className="acad-cord1">
-                    <img src="pictures/adeola.jpg" alt="General secretary"/>
+                    <img src="pictures/adeola.jpg" alt="Academic coordinator1"/>
                     <p>Adekeye, Adeola</p>
                     <p>Academic Coordinator 1</p>
                     <p>08100581923</p> 
                </div>
                <div className="acad-cord2">
-                    <img src="pictures/timothy.jpg" alt="General secretary"/>
+                    <img src="pictures/timothy.jpg" alt="Academic coordinator 2"/>
                     <p>Solarin, Timothy</p>
                     <p>Academic Coordinator 2</p>
                     <p>08094169801</p> 
                </div>
                <div className="Prayo1">
-                    <img src="pictures/emmanuel.jpg" alt="General secretary"/>
+                    <img src="pictures/emmanuel.jpg" alt="Prayer Secretary1"/>
                     <p>Aiyenigba, Emmanuel</p>
                     <p>Prayer Secretary 1</p>
                     <p>08147367859</p> 
                </div>
                <div className="Prayo2">
-                    <img src="pictures/elijah.jpg" alt="General secretary"/>
+                    <img src="pictures/elijah.jpg" alt="Prayer Secretary 2"/>
                     <p>Otunla, Elijah</p>
                     <p>Prayer Secretary 2</p>
                     <p>08136766543</p> 
@@ -89,19 +94,61 @@ const Executive = () =>{
                        <p>HOD, Technical unit</p>
                        <p>07065972873</p>
                    </div>
-                   <div className="interpretation">
-                       <img src="pictures/ifeoluwa.jpg" alt="HOD interpretaion"/>
-                       <p>Adebayo, Ifeoluwa</p>
-                       <p>HOD, Drama and Interpretaion Units</p>
-                       <p>08165385205</p>
-                   </div>
+                  
+                   <div className="sunday-school">
+                        <img src="pictures/barrister.jpg" alt="HOD Sunday School Unit" />
+                        <p>Ajiroba, Paul</p>
+                        <p>HOD, Sunday School Unit</p>
+                        <p>08174593928</p>
+                    </div>
                    <div className="press">
                        <img src="pictures/darasimi.jpg" alt="HOD Press Unit"/>
                        <p>Onigbinde, Oluwadarasimi</p>
                        <p>HOD, Press Unit</p>
                         <p>09066724369</p>
                    </div>
+
+                    <div className="interpretation">
+                       <img src="pictures/ifeoluwa.jpg" alt="HOD interpretaion"/>
+                       <p>Adebayo, Ifeoluwa</p>
+                       <p>HOD, Drama and Interpretaion Units</p>
+                       <p>08165385205</p>
+                   </div>
+                    <div className="usher">
+                        <img src="pictures/lanre.jpg" alt="HOD Ushering Unit" />
+                        <p>Ashaolu, Olanrewaju</p>
+                        <p>HOD, Ushering Unit </p>
+                        <p>08087872367</p>
+                    </div>
+                    <div className="choir">
+                        <img src="pictures/christiana.jpg" alt="HOD Choir Unit" />
+                        <p>Ayoade, Christianah</p>
+                        <p>HOD, Choir Unit</p>
+                        <p>08166998987</p>
+                    </div>
+                    <div className="sanitation">
+                        <img src="pictures/adeniyi.jpg" alt="HOD Sanitation Unit" />
+                        <p>Ashaolu, Adeniyi</p>
+                        <p>HOD, Sanitation Unit</p>
+                        <p>07035582976</p>
+                    </div>
+                    <div className="children-unit">
+                        <img src="pictures/temitope.jpg" alt="HOD Children Unit" />
+                        <p>Ajiroba, Temitope</p>
+                        <p>HOD, Children Unit</p>
+                        <p>08134557555</p>
+                    </div>
+
                </div>
+
+               
+           </div>
+           
+           <div className="home" onClick={scrollToTop}>
+                <Link to="/">
+                    <img src="https://img.icons8.com/flat_round/64/000000/arrow-left.png" alt="return home"/>
+                    <p>Return to homepage</p>
+                </Link>
            </div>
         </Container>
         // name, department, phone and office
@@ -156,6 +203,19 @@ const Container = styled.div`
     .hods{
         text-align: center;
         margin-top: 3rem;
+    }
+    .home{
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+    .home img{
+        width: 4rem;
+    }
+    .sunday-school img{
+        height: 15rem;
+        width: 18rem;
     }
     @media(min-width: 960px){
         .executive, .hod{

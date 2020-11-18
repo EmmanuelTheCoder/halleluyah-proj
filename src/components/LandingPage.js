@@ -1,11 +1,12 @@
 import React from 'react';
-import './Halleluyah.css';
+import '../Halleluyah.css';
 import Title from './Title';
-// import Executive from './Executive';
-// import {Link} from 'react-router-dom';
-import halleluyah from './pictures/halleluyah.png';
-import pastor from './pictures/pastor Ajiroba.png';
+import {Link} from 'react-router-dom';
 
+
+const scrollToTop = () => {
+   window.scrollTo(0, 0)
+}
 
 const LandingPage = () =>{
    
@@ -19,15 +20,16 @@ const LandingPage = () =>{
                   <p className="church-info" id="about-church">
                      Christ Apostolic Church (CAC) Halleluyah chapel is located at Beatrice Anike street, Tanke-Okeodo, Ilorin, Nigeria. It was established on
                      November 1, 2003 by the Lord's decree to Pastor M.B Ajiroba who is the Minister-in-charge. The church has been
-                     a life-changing arena, helping people, especially youths to be better and to set their focus on Christ alone. <i>To succeed in life and make heaven </i> 
+                     a life-changing arena, helping people, especially youths to do better and to set their focus on Christ alone. <i>To succeed in life and make heaven </i> 
                      is the Church's mission statement; derived from Matthew 6:33. From the inception of CAC Halleluyah Chapel, everyone who worships or has ever worshipped here have been known to testify of how mightily the Lord has blessed them and the encouters they've had with the Lord. It is indeed a life changing arena.
                      Worship with us, today! 
                   </p>
                </div>
                <div className="church-image-container">
-                  <img src={halleluyah} alt="church" className="church-image" />
+                  <img src="pictures/halleluyah.png" alt="church" className="church-image" />
                   <p className="image-desc">side view of the church</p>
                </div>
+
             </div>
 
             <div className="service">
@@ -60,10 +62,10 @@ const LandingPage = () =>{
            </div>
            <div className="minister">
               <h2 id="minister-in-charge">minister-in-charge</h2>
-              <img src={pastor} alt="pastor" className="pastor"/>
+              <img src="pictures/pastor Ajiroba.png" alt="pastor" className="pastor"/>
               <p className="minister-desc">
                   Pastor M.B Ajiroba is the pastor in charge of Christ Apostolic Church, Halleluyah Chapel. Daddy, as he is fondly called by his members
-                  is a father and mentor par excellence and a disciplinarian. He is fond of saying <i>yo ku ku da fun yin.</i> In English it means <i>it shall surely be well with you. </i>
+                  is a father, mentor par excellence and a disciplinarian. He is fond of saying <i>yo ku ku da fun yin.</i> In English it means <i>it shall surely be well with you. </i>
                   After Daddy received God's call, he proceeded to a seminary school and after which he started CAC Halleluyah Chapel on November 1, 2003. Prior to this time, he has served in different capacities as a church leader including being an Elder at Christ Apostolic Church, Oke-isegun, Ilorin, Nigeria.
                   Pastor M.B Ajiroba loves education so much and always admonish young people to embrace education as one of the pathways to success. He has Masters Degrees in Business Administration and Theology. He is currently undergoing his PhD in Theology program.
                   He is happily married and blessed with wonderful children.
@@ -82,7 +84,7 @@ const LandingPage = () =>{
            </div>
            <div className="contact" id="contact">
               
-              <p>For prayer request and counselling, use the form below!</p>
+              <p>For contact, prayer request and/or counselling, use the form below!</p>
                <form method="post" name="contact, prayer and counselling" netlify className="contact-form">
                   <input type="hidden" name="form-name" value="hire" />
                
@@ -91,13 +93,17 @@ const LandingPage = () =>{
                      <label>Your Email: <input type="email" name="email"/></label>
                   
                   
-                     <label>About company: <textarea name="message" placeholder="Just a little detail about the company, please." cols="30" rows="10"></textarea></label>
+                     <label>About company: <textarea name="message" placeholder="Type in your message and/or prayer request(s) here" cols="30" rows="10"></textarea></label>
                   
                   
                      <button type="submit">Send</button>
                   </form>
-                    
            </div>
+            <div className="meet-the-executives">
+               <Link to="/executives" onClick={scrollToTop}>
+                  <button>meet the executives</button>
+               </Link>
+            </div>   
          </div>
       </React.Fragment>
    );
