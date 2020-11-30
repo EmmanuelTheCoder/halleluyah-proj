@@ -73,11 +73,11 @@ const LandingPage = () =>{
                   He is happily married and blessed with wonderful children.
               </p>
            </div>
-           <div className="events">
+           {/* <div className="events">
               <h2>upcoming events</h2>
               <img src="pictures/harvest.jpg" alt="harvest" />
                <p>Donation for the 17th year harvest anniversary should be sent to this account <strong>Oyewole Oluwabori, 0243946979, GTB.</strong></p>
-           </div>
+           </div> */}
            <div className="watch-word">
               <h2>Watchword for year 2020</h2>
               <p>"Look unto me, and be ye saved, all the ends of the earth:
